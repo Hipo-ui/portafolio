@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .main-section {
+        @apply flex flex-col;
+    }
+
+    .section {
+        @apply odd:bg-primary-50/50 even:bg-white py-14 lg:py-24;
+    }
+
+    .section-content {
+        @apply container mx-auto flex flex-col gap-8 lg:flex-row;
+    }
+
+    .content-center {
+        @apply flex flex-row items-center justify-center;
+    }
+
+    .title {
+        @apply text-4xl text-neuter-700 font-medium text-center;
+    }
+
+    .subtitle {
+        @apply text-2xl text-neuter-600 font-normal text-center;
+    }
+
+    .description {
+        @apply text-lg text-neuter-600 font-light text-center;
+    }
+
+    .line-divisor {
+        @apply w-10 rounded-full border-4 border-primary-600;
+    }
+
+    .bg-profile {
+        @apply w-64 lg:w-96 bg-white rounded-full border-4 border-primary-600;
+    }
+
+    .img-profile {
+        @apply w-full rounded-full object-cover;
+    }
+
+    .pill-contact {
+        @apply w-fit flex flex-row flex-nowrap gap-2 justify-center items-center p-2 bg-primary-600/30 rounded-full text-primary-700 text-sm font-normal;
+    }
+
+    .pill-contact_icon {
+        @apply w-5 h-5;
+    }
+
+
+    /* Section Project */
+    .grid-projects {
+        @apply container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14;
+    }
+
+    .card-project {
+        @apply bg-white rounded-lg flex flex-col items-stretch drop-shadow transition ease-in-out delay-150 lg:hover:scale-110 duration-300 hover:shadow-lg hover:shadow-primary-100;
+    }
+
+    .card-project_img {
+        @apply block w-full h-52 rounded-t-lg object-cover;
+    }
+
+    .card-project_body {
+        @apply flex flex-col gap-2 p-4;
+    }
+
+    .card-project_title {
+        @apply text-lg text-neuter-700 font-medium;
+    }
+
+    .card-project_description {
+        @apply text-base text-neuter-600 font-light;
+    }
+
+    .card-project_details {
+        @apply flex flex-row gap-2 items-center;
+    }
+
+    .card-project_details_label {
+        @apply text-sm text-neuter-600 font-medium;
+    }
+
+    .card-project_details_icon {
+        @apply w-4 h-4;
+    }
+
+    .card-project_footer {
+        @apply mt-auto p-4 pt-0;
+    }
+
+    .card-project_button {
+        @apply flex flex-row justify-center w-full bg-primary-600 rounded-lg text-lg text-white font-medium py-2 px-4 hover:bg-primary-700 transition ease-in-out;
+    }
+
+
+    /* Section Habilities */
+    .card-tech {
+        @apply w-full lg:w-1/2 flex flex-col gap-12 rounded-2xl p-12 bg-white border-2 border-sky-600 shadow-lg;
+    }
+
+    .card-tech_header {
+        @apply text-2xl font-medium w-fit rounded-full py-1 px-4 text-white bg-primary-600;
+    }
+
+    .grid-tech {
+        @apply grid grid-cols-3 md:grid-cols-4 gap-8;
+    }
+
+    .card-tech_item {
+        @apply flex flex-col gap-2 justify-center items-center;
+    }
+
+    .card-tech_item_img {
+        @apply w-12 h-12;
+    }
+
+    .card-tech_item_title {
+        @apply text-sm rounded-full py-1 px-2 text-primary-600 bg-primary-200/50;
+    }
+
+
+
+    .card-know {
+        @apply w-full lg:w-1/2 flex flex-col gap-12 rounded-2xl p-12 bg-sky-600 border-2 border-transparent shadow-lg;
+    }
+
+    .card-know_header {
+        @apply text-2xl font-medium w-fit rounded-full py-1 px-4 text-primary-600 bg-white; 
+    }
+
+    .card-know_list {
+        @apply list-none list-inside flex flex-row flex-wrap gap-6;
+    }
+
+    .card-know_item_title {
+        @apply text-base rounded-full py-1 px-3 text-white bg-primary-700/60;
+    }
+}
